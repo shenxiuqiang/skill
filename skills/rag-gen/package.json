@@ -1,0 +1,9 @@
+{
+  "name": "rag-gen-skill",
+  "version": "0.1.0",
+  "description": "Generate full RAG documentation for any project",
+  "bin": {
+    "rag-gen": "./run.js"
+  },
+  "private": true
+}

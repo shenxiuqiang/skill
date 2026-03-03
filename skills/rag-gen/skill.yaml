@@ -1,0 +1,16 @@
+name: rag-generator
+description: Generate full RAG documentation for any project
+
+inputs:
+  project_name:
+    type: string
+    description: Target project folder (e.g. studio, hub, app or path)
+
+steps:
+  - scan_repo
+  - generate_overview
+  - generate_architecture
+  - generate_api
+  - generate_rules
+  - generate_examples
+  - generate_pitfalls

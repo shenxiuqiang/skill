@@ -31,3 +31,13 @@ skills/
 
 - 每个 skill 为一个文件夹，至少包含 `SKILL.md`（含 YAML frontmatter）。
 - 详见 [ClawHub Skill 格式](https://github.com/openclaw/clawhub/blob/main/docs/skill-format.md)。
+
+## 推送到 GitHub
+
+1. 在 GitHub 上新建空仓库（例如名为 `skill`，不要勾选 README / .gitignore）。
+2. 本仓库已配置 `origin` 为 `git@github.com:shenxiuqiang/skill.git`。创建好空仓后，在本地执行：
+   ```bash
+   cd ~/workspace/skill
+   git push -u origin main
+   ```
+   若使用其他 GitHub 账号，请先修改 remote：`git remote set-url origin git@github.com:YOUR_USERNAME/skill.git`
